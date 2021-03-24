@@ -1,0 +1,177 @@
+@media screen and (min-width: 1300px){
+  .main-header {
+    .menu {
+      display: flex;
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-small {
+    grid-template-columns: 31% 66%;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  a, a:hover {
+    border-bottom: none;
+  }
+
+  .accordion {
+    .link {
+      justify-content: center;
+      border-bottom: none;
+      &:hover {
+        border-bottom: none;
+      }
+    }
+    .submenu {
+      position: relative;
+      padding-bottom: 0;
+    }
+  }
+
+  .main-header {
+    .menu {
+      display: none;
+      position: absolute;
+      background: #fff;
+      z-index: 5;
+      width: 100%;
+      left: 0;
+      top: 50px;
+      text-align: center;
+      padding: 71px 0;
+
+      li {
+        padding: 10px 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .grid-small {
+    grid-template-columns: 40% 56%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .form-validate {
+    padding: 40px 20px 30px;
+
+    h2 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      margin-bottom: 5px;
+    }
+
+    .text-p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  .mfp-close-btn-in .mfp-close {
+    margin: 20px;
+  }
+
+  .grid-small {
+    grid-template-columns: 1fr;
+  }
+
+  .news-block {
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 26px;
+    line-height: 39px;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  h5, h6, p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .accordion {
+    .link {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .submenu {
+      a {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+
+  .btn {
+    font-size: 16px;
+    line-height: 19.5px;
+    padding: 15px 64px;
+  }
+
+  .special {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .main-block .text {
+    padding: 141px 0;
+  }
+
+  .news-block {
+    .flex {
+      margin-bottom: 20px;
+    }
+
+    .item {
+      padding: 20px 20px 30px;
+    }
+
+    .pic {
+      display: none;
+    }
+
+    .text-block {
+      .btn {
+        margin: 5px 0 0;
+      }
+    }
+  }
+}

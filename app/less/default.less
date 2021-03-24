@@ -1,0 +1,142 @@
+@import url(./mixin.less);
+
+html{
+	height: 100%;
+}
+html, body{
+	margin: 0;
+}
+body{
+	position: relative;
+	font-size: 14px;
+	min-height: 100%;
+}
+*{
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+	padding: 0;
+	margin: 0;
+
+	&::selection {
+		background: #e8334d;
+		color: #fff;
+	}
+}
+img{
+	max-width: 100%;
+	display: inline-block;
+}
+a{
+	display: inline-block;
+	color: @blue;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 600;
+	border-bottom: 1px transparent;
+	.transition;
+
+	&:hover{
+		border-bottom: 1px solid #004680;
+	}
+}
+h1, h2, h3, h4, h5, h6{
+	margin-top: 0;
+	font-weight: normal;
+	font-family: 'Montserrat', sans-serif;
+}
+h1{
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 150%;
+	color: @white;
+	max-width: 515px;
+}
+h2{
+	font-size: 36px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	line-height: 43px;
+	color: @blue;
+}
+h3{
+	font-size: 24px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	line-height: 36px;
+	color: @blue;
+	margin: 10px 0;
+}
+h4{
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	line-height: 150%;
+	color: @white;
+	margin: 30px 0;
+}
+h5{
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	line-height: 27px;
+	color: @red;
+}
+h6{
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	line-height: 27px;
+	color: #222;
+}
+p{
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	line-height: 27px;
+	color: #222;
+	margin: 10px 0;
+}
+ul{
+	list-style: none;
+}
+button{
+	border: none;
+	cursor: pointer;
+	border-radius: 0;
+	appearance: none;
+}
+input{
+	appearance: none;
+}
+input:not([type="submit"]){
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	height: 43px;
+	padding: 16px 24px;
+	font-size: 16px;
+}
+textarea{
+	max-width: 100%;
+	outline: none;
+	border: none;
+	display: block;
+	padding: 16px 24px;
+	min-height: 178px;
+	font-size: 16px;
+	width: 100%;
+	resize: none;
+}
+address{
+	font-style: normal;
+}
+strong{
+	font-weight: 700;
+}
+::-webkit-input-placeholder {color:@blue;}
+::-moz-placeholder          {color:@blue;}
+:-moz-placeholder           {color:@blue;}
+:-ms-input-placeholder      {color:@blue;}
